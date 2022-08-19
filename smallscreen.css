@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --grey: #333333;
+    --background: #F5F2F0;
+    --light-grey: #818181;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+body {
+    background-color: var(--background);
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* left-section */
+.main-img {
+    width: 100%;
+    height: 50vh;
+}
+
+.main {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* right-section */
+.right-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAV-BAR */
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: relative;
+}
+
+.logo {
+   width: 70px; 
+    margin-left: 20px;
+}
+
+.list {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--light-grey);
+    margin-right: 10px;
+}
+
+.list .list-items:first-child {
+    color: var(--grey)
+}
+
+.list-items {
+    list-style: none;
+}
+
+.list::before {
+    content: "";
+    width: 200px;
+    display: block;
+    position: absolute;
+    bottom: 17%;
+    right: 10px
+}
+
+.list-items {
+    list-style: none;
+}
+
+/* RIGHT-MIDDLE */
+.right-middle {
+    position: relative;
+    display: flex;
+    width: 93%;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.rm1 {
+    width: fit-content;
+    height: 100%;
+}
+
+.rm-heading {
+    font-size: 60px;
+    font-family: 'Merriweather';
+    font-weight: 900;
+    line-height: 60px;
+}
+
+.h-lighter {
+    color: var(--background);
+    /* font-size: 50px; */
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.h-darker {
+    margin-left: 80px;
+    padding: 0;
+    display: block;
+    color: var(--grey)
+}
+
+.rm2 {
+    width: fit-content;
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    color: var(--light-grey);
+}
+
+.rm3 {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    top: 0;
+}
+
+.social img {
+    width: 15px;
+    margin: 0 5px;
+}
+
+#s3 {
+    height: 13px;
+}
+
+/* BUTTON-SECTION */
+.button-section {
+    height: 8%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-btn {
+    background-color: var(--grey);
+    color: #ffffff;
+    width: 130px;
+    height: 25px;
+    font-size: 11px;
+    border: none;
+    font-weight: 100;
+}
+
+
+/* LOWER-SECTION */
+.lower-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lower-left {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.skills::before {
+    content: " ";
+    width: 90%;
+    height: 0.5px;
+    background-color: var(--light-grey);
+    position: absolute;
+    bottom: 0px;
+}
+
+.skill {
+    font-size: 11px;
+
+}
+
+.skills .skill:first-child {
+    color: var(--grey);
+}
+
+
+
+/* LOWER-SECTION */
+
+.lower-middle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.comma {
+    font-family: 'Merriweather';
+    font-size: 40px;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: -15px;
+    left: 20px;
+}
+
+.down-arrow {
+    display: none;
+}
+
+.lower-text {
+    position: relative;
+    top: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.bottom-img {
+    width: 100%;
+    position: relative;
+    top: 65px;
+}
